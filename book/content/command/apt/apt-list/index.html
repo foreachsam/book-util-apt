@@ -9,45 +9,45 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>index - apt 使用筆記</title>
+        <title>apt list - apt 使用筆記</title>
       
       
       
-        <link rel="canonical" href="https://foreachsam.github.io/book-util-apt/book/content/deb-package/">
+        <link rel="canonical" href="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-list/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="https://foreachsam.github.io/book-util-apt/book/content/deb-package/">
+    <meta property="og:url" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-list/">
     <meta property="og:title" content="apt 使用筆記">
-    <meta property="og:image" content="https://foreachsam.github.io/book-util-apt/book/content/deb-package//../../">
+    <meta property="og:image" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-list//../../../../">
     <meta name="apple-mobile-web-app-title" content="apt 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="../../None">
-    <link rel="icon" type="image/x-icon" href="../../None">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../None">
+    <link rel="icon" type="image/x-icon" href="../../../../None">
     <style>
       @font-face {
       	font-family: 'Icon';
-      	src: url('../../assets/fonts/icon.eot?52m981');
-      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+      	src: url('../../../../assets/fonts/icon.eot?52m981');
+      	src: url('../../../../assets/fonts/icon.eot?#iefix52m981')
                format('embedded-opentype'),
-      		   url('../../assets/fonts/icon.woff?52m981')
+      		   url('../../../../assets/fonts/icon.woff?52m981')
                format('woff'),
-      		   url('../../assets/fonts/icon.ttf?52m981')
+      		   url('../../../../assets/fonts/icon.ttf?52m981')
                format('truetype'),
-      		   url('../../assets/fonts/icon.svg?52m981#icon')
+      		   url('../../../../assets/fonts/icon.svg?52m981#icon')
                format('svg');
       	font-weight: normal;
       	font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="../../assets/stylesheets/application-54f87043f3.css">
+    <link rel="stylesheet" href="../../../../assets/stylesheets/application-54f87043f3.css">
     
-      <link rel="stylesheet" href="../../assets/stylesheets/palettes-05ab2406df.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/palettes-05ab2406df.css">
     
     
       
@@ -64,7 +64,7 @@
       </style>
     
     
-    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    <script src="../../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
     
   </head>
   
@@ -92,12 +92,12 @@
           <span class="path">
             
               
-                deb package <i class="icon icon-link"></i>
+                command <i class="icon icon-link"></i>
               
             
           </span>
         
-        index
+        apt list
       </div>
     </div>
     
@@ -153,7 +153,7 @@
           
             
   <li>
-    <a class="" title="首頁" href="../..">
+    <a class="" title="首頁" href="../../../..">
       首頁
     </a>
     
@@ -167,7 +167,7 @@
       
         
   <li>
-    <a class="" title="manual" href="../referance/manual/">
+    <a class="" title="manual" href="../../../referance/manual/">
       manual
     </a>
     
@@ -185,31 +185,16 @@
       
         
   <li>
-    <a class="current" title="index" href="./">
+    <a class="" title="index" href="../../../deb-package/">
       index
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="套件連結" href="#_1">
-                套件連結
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
       
         
   <li>
-    <a class="" title="apt" href="apt/">
+    <a class="" title="apt" href="../../../deb-package/apt/">
       apt
     </a>
     
@@ -227,7 +212,7 @@
       
         
   <li>
-    <a class="" title="apt" href="../command/apt/">
+    <a class="" title="apt" href="../">
       apt
     </a>
     
@@ -236,9 +221,36 @@
       
         
   <li>
-    <a class="" title="apt list" href="../command/apt/apt-list/">
+    <a class="current" title="apt list" href="./">
       apt list
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="manpage" href="#manpage">
+                manpage
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="help" href="#help">
+                help
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="指令範例" href="#_1">
+                指令範例
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -271,11 +283,63 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="deb-package">deb package</h1>
-<h2 id="_1">套件連結</h2>
-<ul>
-<li><a href="http://packages.ubuntu.com/xenial/apt">apt</a></li>
-</ul>
+          <h1 id="apt-list">apt list</h1>
+<h2 id="manpage">manpage</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ man apt</code></pre>
+
+
+<p>可以找到一段<a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt.8.html">說明</a></p>
+<pre class="code"><code>list (work-in-progress)
+    list is somewhat similar to dpkg-query --list in that it can display a list of packages satisfying certain
+    criteria. It supports glob(7) patterns for matching package names as well as options to list installed
+    (--installed), upgradeable (--upgradeable) or all available (--all-versions) versions.</code></pre>
+
+
+<h2 id="help">help</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt -h</code></pre>
+
+
+<p>可以找到一段說明</p>
+<pre class="code"><code>list - list packages based on package names</code></pre>
+
+
+<h2 id="_1">指令範例</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list | grep bash</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list bash</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list bash*</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list *bash*</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list *bash</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list bash* --installed</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list bash* --all-versions</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt list --upgradeable</code></pre>
           <aside class="copyright" role="note">
             
               Copyright (c) foreachsam &ndash;
@@ -294,7 +358,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../referance/manual/" title="manual">
+        <a href="../" title="apt">
           <span class="direction">
             上一頁
           </span>
@@ -304,7 +368,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                manual
+                apt
               </div>
             </div>
           </div>
@@ -312,22 +376,6 @@
       
     </div>
     <div class="next">
-      
-        <a href="apt/" title="apt">
-          <span class="direction">
-            下一頁
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                apt
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>
@@ -346,10 +394,10 @@
       </div>
     </main>
     <script>
-      var base_url = '../..';
+      var base_url = '../../../..';
       var repo_id  = '';
     </script>
-    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    <script src="../../../../assets/javascripts/application-997097ee0c.js"></script>
     
     
       <script>
