@@ -9,45 +9,45 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>manual - apt 使用筆記</title>
+        <title>apt install - apt 使用筆記</title>
       
       
       
-        <link rel="canonical" href="https://foreachsam.github.io/book-util-apt/book/content/referance/manual/">
+        <link rel="canonical" href="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-install/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="https://foreachsam.github.io/book-util-apt/book/content/referance/manual/">
+    <meta property="og:url" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-install/">
     <meta property="og:title" content="apt 使用筆記">
-    <meta property="og:image" content="https://foreachsam.github.io/book-util-apt/book/content/referance/manual//../../../">
+    <meta property="og:image" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-install//../../../../">
     <meta name="apple-mobile-web-app-title" content="apt 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
-    <link rel="shortcut icon" type="image/x-icon" href="../../../None">
-    <link rel="icon" type="image/x-icon" href="../../../None">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../None">
+    <link rel="icon" type="image/x-icon" href="../../../../None">
     <style>
       @font-face {
       	font-family: 'Icon';
-      	src: url('../../../assets/fonts/icon.eot?52m981');
-      	src: url('../../../assets/fonts/icon.eot?#iefix52m981')
+      	src: url('../../../../assets/fonts/icon.eot?52m981');
+      	src: url('../../../../assets/fonts/icon.eot?#iefix52m981')
                format('embedded-opentype'),
-      		   url('../../../assets/fonts/icon.woff?52m981')
+      		   url('../../../../assets/fonts/icon.woff?52m981')
                format('woff'),
-      		   url('../../../assets/fonts/icon.ttf?52m981')
+      		   url('../../../../assets/fonts/icon.ttf?52m981')
                format('truetype'),
-      		   url('../../../assets/fonts/icon.svg?52m981#icon')
+      		   url('../../../../assets/fonts/icon.svg?52m981#icon')
                format('svg');
       	font-weight: normal;
       	font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="../../../assets/stylesheets/application-54f87043f3.css">
+    <link rel="stylesheet" href="../../../../assets/stylesheets/application-54f87043f3.css">
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/palettes-05ab2406df.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/palettes-05ab2406df.css">
     
     
       
@@ -64,7 +64,7 @@
       </style>
     
     
-    <script src="../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    <script src="../../../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
     
   </head>
   
@@ -92,12 +92,12 @@
           <span class="path">
             
               
-                參考文件 <i class="icon icon-link"></i>
+                command <i class="icon icon-link"></i>
               
             
           </span>
         
-        manual
+        apt install
       </div>
     </div>
     
@@ -153,7 +153,7 @@
           
             
   <li>
-    <a class="" title="首頁" href="../../..">
+    <a class="" title="首頁" href="../../../..">
       首頁
     </a>
     
@@ -167,24 +167,9 @@
       
         
   <li>
-    <a class="current" title="manual" href="./">
+    <a class="" title="manual" href="../../../referance/manual/">
       manual
     </a>
-    
-      
-        
-      
-      
-        <ul>
-          
-            <li class="anchor">
-              <a title="閱讀文件" href="#_1">
-                閱讀文件
-              </a>
-            </li>
-          
-        </ul>
-      
     
   </li>
 
@@ -200,7 +185,7 @@
       
         
   <li>
-    <a class="" title="index" href="../../deb-package/">
+    <a class="" title="index" href="../../../deb-package/">
       index
     </a>
     
@@ -209,7 +194,7 @@
       
         
   <li>
-    <a class="" title="apt" href="../../deb-package/apt/">
+    <a class="" title="apt" href="../../../deb-package/apt/">
       apt
     </a>
     
@@ -227,7 +212,7 @@
       
         
   <li>
-    <a class="" title="apt" href="../../command/apt/">
+    <a class="" title="apt" href="../">
       apt
     </a>
     
@@ -236,7 +221,7 @@
       
         
   <li>
-    <a class="" title="apt list" href="../../command/apt/apt-list/">
+    <a class="" title="apt list" href="../apt-list/">
       apt list
     </a>
     
@@ -245,9 +230,36 @@
       
         
   <li>
-    <a class="" title="apt install" href="../../command/apt/apt-install/">
+    <a class="current" title="apt install" href="./">
       apt install
     </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="manpage" href="#manpage">
+                manpage
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="help" href="#help">
+                help
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="指令範例" href="#_1">
+                指令範例
+              </a>
+            </li>
+          
+        </ul>
+      
     
   </li>
 
@@ -280,21 +292,95 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="manual">manual</h1>
-<h2 id="_1">閱讀文件</h2>
-<ul>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-key.8.html">apt-key</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-secure.8.html">apt-secure</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt.8.html">apt</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-cache.8.html">apt-cache</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-config.8.html">apt-cofig</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-mark.8.html">apt-mark</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-get.8.html">apt-get</a></li>
-<li>$ man 8 <a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt-cdrom.8.html">apt-cdrom</a></li>
-<li>$ man 5 sources-list</li>
-<li>$ man 5 apt-preferences</li>
-<li>$ man 5 apt.conf</li>
-</ul>
+          <h1 id="apt-install">apt install</h1>
+<h2 id="manpage">manpage</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ man apt</code></pre>
+
+
+<p>可以找到一段<a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt.8.html">說明</a></p>
+<pre class="code"><code>install, remove, purge (apt-get(8))
+    Performs the requested action on one or more packages specified via regex(7), glob(7) or exact match. The
+    requested action can be overridden for specific packages by append a plus (+) to the package name to
+    install this package or a minus (-) to remove it.
+
+    A specific version of a package can be selected for installation by following the package name with an
+    equals (=) and the version of the package to select. Alternatively the version from a specific release can
+    be selected by following the package name with a forward slash (/) and codename (jessie, stretch, sid ...)
+    or suite name (stable, testing, unstable). This will also select versions from this release for
+    dependencies of this package if needed to satisfy the request.
+
+    Removing a package removes all packaged data, but leaves usually small (modified) user configuration files
+    behind, in case the remove was an accident. Just issuing an installation request for the accidentally
+    removed package will restore its function as before in that case. On the other hand you can get rid of
+    these leftovers by calling purge even on already removed packages. Note that this does not affect any data
+    or configuration stored in your home directory.</code></pre>
+
+
+<h2 id="help">help</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ apt -h</code></pre>
+
+
+<p>可以找到一段說明</p>
+<pre class="code"><code>install - install packages</code></pre>
+
+
+<h2 id="_1">指令範例</h2>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ sudo apt install hello</code></pre>
+
+
+<p>就會安裝「<a href="http://packages.ubuntu.com/xenial/hello">hello</a>」這個套件。</p>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -l hello</code></pre>
+
+
+<p>就看到</p>
+<pre class="code"><code class="language-sh">Desired=Unknown/Install/Remove/Purge/Hold
+| Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+|/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+||/ Name                     Version           Architecture      Description
++++-========================-=================-=================-======================================================
+ii  hello                    2.10-1            amd64             example package based on GNU hello</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ dpkg --get-selections | grep hello</code></pre>
+
+
+<p>就會看到</p>
+<pre class="code"><code class="language-sh">hello                                           install</code></pre>
+
+
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -s hello | grep Status:</code></pre>
+
+
+<p>就會看到</p>
+<pre class="code"><code class="language-sh">Status: install ok installed</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -L hello</code></pre>
+
+
+<p>就會看到</p>
+<pre class="code"><code>/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/hello.1.gz
+/usr/share/info
+/usr/share/info/hello.info.gz
+/usr/share/doc
+/usr/share/doc/hello
+/usr/share/doc/hello/copyright
+/usr/share/doc/hello/NEWS.gz
+/usr/share/doc/hello/changelog.Debian.gz
+/usr/bin
+/usr/bin/hello</code></pre>
           <aside class="copyright" role="note">
             
               Copyright (c) foreachsam &ndash;
@@ -313,7 +399,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../../.." title="首頁">
+        <a href="../apt-list/" title="apt list">
           <span class="direction">
             上一頁
           </span>
@@ -323,7 +409,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                首頁
+                apt list
               </div>
             </div>
           </div>
@@ -331,22 +417,6 @@
       
     </div>
     <div class="next">
-      
-        <a href="../../deb-package/" title="index">
-          <span class="direction">
-            下一頁
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                index
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>
@@ -365,10 +435,10 @@
       </div>
     </main>
     <script>
-      var base_url = '../../..';
+      var base_url = '../../../..';
       var repo_id  = '';
     </script>
-    <script src="../../../assets/javascripts/application-997097ee0c.js"></script>
+    <script src="../../../../assets/javascripts/application-997097ee0c.js"></script>
     
     
       <script>
