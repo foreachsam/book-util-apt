@@ -126,6 +126,31 @@
             "title": "\u67e5\u8a62 apt \u5c6c\u65bc\u90a3\u500b\u5957\u4ef6"
         },
         {
+            "location": "/content/command/apt/apt-update/",
+            "text": "apt update\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nupdate (apt-get(8))\n    update is used to download package information from all configured sources. Other commands operate on this\n    data to e.g. perform package upgrades or search in and display details about all packages available for\n    installation.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nupdate - update list of available packa\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt update\n\n\n\n\n\u7136\u5f8c\u57f7\u884c\uff0c\u89c0\u770b\u6709\u54ea\u4e9b\u5957\u4ef6\u9700\u8981\u66f4\u65b0\n\n\n$ apt list --upgradable\n\n\n\n\n\u518d\u57f7\u884c\u4e0b\u9762\u6307\u4ee4\uff0c\u66f4\u65b0\u5957\u4ef6\n\n\n$ sudo apt upgrade\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ sudo apt full-upgrade",
+            "title": "apt update"
+        },
+        {
+            "location": "/content/command/apt/apt-update/#apt-update",
+            "text": "",
+            "title": "apt update"
+        },
+        {
+            "location": "/content/command/apt/apt-update/#manpage",
+            "text": "\u57f7\u884c  $ man apt  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5 \u8aaa\u660e  update (apt-get(8))\n    update is used to download package information from all configured sources. Other commands operate on this\n    data to e.g. perform package upgrades or search in and display details about all packages available for\n    installation.",
+            "title": "manpage"
+        },
+        {
+            "location": "/content/command/apt/apt-update/#help",
+            "text": "\u57f7\u884c  $ apt -h  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e  update - update list of available packa",
+            "title": "help"
+        },
+        {
+            "location": "/content/command/apt/apt-update/#_1",
+            "text": "\u57f7\u884c  $ sudo apt update  \u7136\u5f8c\u57f7\u884c\uff0c\u89c0\u770b\u6709\u54ea\u4e9b\u5957\u4ef6\u9700\u8981\u66f4\u65b0  $ apt list --upgradable  \u518d\u57f7\u884c\u4e0b\u9762\u6307\u4ee4\uff0c\u66f4\u65b0\u5957\u4ef6  $ sudo apt upgrade  \u6216\u662f\u57f7\u884c  $ sudo apt full-upgrade",
+            "title": "\u6307\u4ee4\u7bc4\u4f8b"
+        },
+        {
             "location": "/content/command/apt/apt-list/",
             "text": "apt list\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nlist (work-in-progress)\n    list is somewhat similar to dpkg-query --list in that it can display a list of packages satisfying certain\n    criteria. It supports glob(7) patterns for matching package names as well as options to list installed\n    (--installed), upgradeable (--upgradeable) or all available (--all-versions) versions.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nlist - list packages based on package names\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ apt list\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list | grep bash\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list bash\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list bash*\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list *bash*\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list *bash\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list bash* --installed\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list bash* --all-versions\n\n\n\n\n\u57f7\u884c\n\n\n$ apt list --upgradeable",
             "title": "apt list"
