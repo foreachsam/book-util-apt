@@ -127,7 +127,7 @@
         },
         {
             "location": "/content/command/apt/apt-update/",
-            "text": "apt update\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nupdate (apt-get(8))\n    update is used to download package information from all configured sources. Other commands operate on this\n    data to e.g. perform package upgrades or search in and display details about all packages available for\n    installation.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nupdate - update list of available packa\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt update\n\n\n\n\n\u7136\u5f8c\u57f7\u884c\uff0c\u89c0\u770b\u6709\u54ea\u4e9b\u5957\u4ef6\u9700\u8981\u66f4\u65b0\n\n\n$ apt list --upgradable\n\n\n\n\n\u518d\u57f7\u884c\u4e0b\u9762\u6307\u4ee4\uff0c\u66f4\u65b0\u5957\u4ef6\n\n\n$ sudo apt upgrade\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ sudo apt full-upgrade",
+            "text": "apt update\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nupdate (apt-get(8))\n    update is used to download package information from all configured sources. Other commands operate on this\n    data to e.g. perform package upgrades or search in and display details about all packages available for\n    installation.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nupdate - update list of available packages\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt update\n\n\n\n\n\u7136\u5f8c\u57f7\u884c\uff0c\u89c0\u770b\u6709\u54ea\u4e9b\u5957\u4ef6\u9700\u8981\u66f4\u65b0\n\n\n$ apt list --upgradable\n\n\n\n\n\u518d\u57f7\u884c\u4e0b\u9762\u6307\u4ee4\uff0c\u66f4\u65b0\u5957\u4ef6\n\n\n$ sudo apt upgrade\n\n\n\n\n\u6216\u662f\u57f7\u884c\n\n\n$ sudo apt full-upgrade",
             "title": "apt update"
         },
         {
@@ -142,7 +142,7 @@
         },
         {
             "location": "/content/command/apt/apt-update/#help",
-            "text": "\u57f7\u884c  $ apt -h  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e  update - update list of available packa",
+            "text": "\u57f7\u884c  $ apt -h  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e  update - update list of available packages",
             "title": "help"
         },
         {
