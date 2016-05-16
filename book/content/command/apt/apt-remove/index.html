@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>apt update - apt 使用筆記</title>
+        <title>apt remove - apt 使用筆記</title>
       
       
       
-        <link rel="canonical" href="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-update/">
+        <link rel="canonical" href="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-remove/">
       
       
         <meta name="author" content="foreachsam">
       
     
-    <meta property="og:url" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-update/">
+    <meta property="og:url" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-remove/">
     <meta property="og:title" content="apt 使用筆記">
-    <meta property="og:image" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-update//../../../../">
+    <meta property="og:image" content="https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-remove//../../../../">
     <meta name="apple-mobile-web-app-title" content="apt 使用筆記">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,7 @@
             
           </span>
         
-        apt update
+        apt remove
       </div>
     </div>
     
@@ -221,8 +221,35 @@
       
         
   <li>
-    <a class="current" title="apt update" href="./">
+    <a class="" title="apt update" href="../apt-update/">
       apt update
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="apt list" href="../apt-list/">
+      apt list
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="" title="apt install" href="../apt-install/">
+      apt install
+    </a>
+    
+  </li>
+
+      
+        
+  <li>
+    <a class="current" title="apt remove" href="./">
+      apt remove
     </a>
     
       
@@ -255,33 +282,6 @@
   </li>
 
       
-        
-  <li>
-    <a class="" title="apt list" href="../apt-list/">
-      apt list
-    </a>
-    
-  </li>
-
-      
-        
-  <li>
-    <a class="" title="apt install" href="../apt-install/">
-      apt install
-    </a>
-    
-  </li>
-
-      
-        
-  <li>
-    <a class="" title="apt remove" href="../apt-remove/">
-      apt remove
-    </a>
-    
-  </li>
-
-      
     </ul>
   </li>
 
@@ -310,17 +310,29 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="apt-update">apt update</h1>
+          <h1 id="apt-remove">apt remove</h1>
 <h2 id="manpage">manpage</h2>
 <p>執行</p>
 <pre class="code"><code class="language-sh">$ man apt</code></pre>
 
 
 <p>可以找到一段<a href="http://manpages.ubuntu.com/manpages/xenial/en/man8/apt.8.html">說明</a></p>
-<pre class="code"><code>update (apt-get(8))
-    update is used to download package information from all configured sources. Other commands operate on this
-    data to e.g. perform package upgrades or search in and display details about all packages available for
-    installation.</code></pre>
+<pre class="code"><code>install, remove, purge (apt-get(8))
+    Performs the requested action on one or more packages specified via regex(7), glob(7) or exact match. The
+    requested action can be overridden for specific packages by append a plus (+) to the package name to
+    install this package or a minus (-) to remove it.
+
+    A specific version of a package can be selected for installation by following the package name with an
+    equals (=) and the version of the package to select. Alternatively the version from a specific release can
+    be selected by following the package name with a forward slash (/) and codename (jessie, stretch, sid ...)
+    or suite name (stable, testing, unstable). This will also select versions from this release for
+    dependencies of this package if needed to satisfy the request.
+
+    Removing a package removes all packaged data, but leaves usually small (modified) user configuration files
+    behind, in case the remove was an accident. Just issuing an installation request for the accidentally
+    removed package will restore its function as before in that case. On the other hand you can get rid of
+    these leftovers by calling purge even on already removed packages. Note that this does not affect any data
+    or configuration stored in your home directory.</code></pre>
 
 
 <h2 id="help">help</h2>
@@ -329,24 +341,46 @@
 
 
 <p>可以找到一段說明</p>
-<pre class="code"><code>update - update list of available packages</code></pre>
+<pre class="code"><code>remove - remove packages</code></pre>
 
 
 <h2 id="_1">指令範例</h2>
 <p>執行</p>
-<pre class="code"><code class="language-sh">$ sudo apt update</code></pre>
+<pre class="code"><code class="language-sh">$ sudo apt remove hello</code></pre>
 
 
-<p>然後執行，觀看有哪些套件需要更新</p>
-<pre class="code"><code class="language-sh">$ apt list --upgradable</code></pre>
+<p>就會移除「<a href="http://packages.ubuntu.com/xenial/hello">hello</a>」這個套件。</p>
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -l hello</code></pre>
 
 
-<p>再執行下面指令，更新套件</p>
-<pre class="code"><code class="language-sh">$ sudo apt upgrade</code></pre>
+<p>顯示</p>
+<pre class="code"><code class="language-sh">dpkg-query: no packages found matching hello</code></pre>
 
 
 <p>或是執行</p>
-<pre class="code"><code class="language-sh">$ sudo apt full-upgrade</code></pre>
+<pre class="code"><code class="language-sh">$ dpkg --get-selections | grep hello</code></pre>
+
+
+<p>沒有任何顯示</p>
+<p>或是執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -s hello | grep Status:</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code class="language-sh">dpkg-query: package 'hello' is not installed and no information is available
+Use dpkg --info (= dpkg-deb --info) to examine archive files,
+and dpkg --contents (= dpkg-deb --contents) to list their contents.</code></pre>
+
+
+<p>執行</p>
+<pre class="code"><code class="language-sh">$ dpkg -L hello</code></pre>
+
+
+<p>顯示</p>
+<pre class="code"><code>dpkg-query: package 'hello' is not installed
+Use dpkg --info (= dpkg-deb --info) to examine archive files,
+and dpkg --contents (= dpkg-deb --contents) to list their contents.</code></pre>
           <aside class="copyright" role="note">
             
               Copyright (c) foreachsam &ndash;
@@ -365,7 +399,7 @@
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../" title="apt">
+        <a href="../apt-install/" title="apt install">
           <span class="direction">
             上一頁
           </span>
@@ -375,7 +409,7 @@
             </div>
             <div class="stretch">
               <div class="title">
-                apt
+                apt install
               </div>
             </div>
           </div>
@@ -383,22 +417,6 @@
       
     </div>
     <div class="next">
-      
-        <a href="../apt-list/" title="apt list">
-          <span class="direction">
-            下一頁
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                apt list
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>
