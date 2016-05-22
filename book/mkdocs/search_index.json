@@ -249,6 +249,31 @@
             "location": "/content/command/apt/apt-remove/#_1",
             "text": "\u57f7\u884c  $ sudo apt remove hello  \u5c31\u6703\u79fb\u9664\u300c hello \u300d\u9019\u500b\u5957\u4ef6\u3002  \u57f7\u884c  $ dpkg -l hello  \u986f\u793a  dpkg-query: no packages found matching hello  \u6216\u662f\u57f7\u884c  $ dpkg --get-selections | grep hello  \u6c92\u6709\u4efb\u4f55\u986f\u793a  \u6216\u662f\u57f7\u884c  $ dpkg -s hello | grep Status:  \u986f\u793a  dpkg-query: package 'hello' is not installed and no information is available\nUse dpkg --info (= dpkg-deb --info) to examine archive files,\nand dpkg --contents (= dpkg-deb --contents) to list their contents.  \u57f7\u884c  $ dpkg -L hello  \u986f\u793a  dpkg-query: package 'hello' is not installed\nUse dpkg --info (= dpkg-deb --info) to examine archive files,\nand dpkg --contents (= dpkg-deb --contents) to list their contents.",
             "title": "\u6307\u4ee4\u7bc4\u4f8b"
+        },
+        {
+            "location": "/content/command/apt/apt-upgrade/",
+            "text": "apt upgrade\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nupgrade (apt-get(8))\n    upgrade is used to install available upgrades of all packages currently installed on the system from the\n    sources configured via sources.list(5). New packages will be installed if required to statisfy\n    dependencies, but existing packages will never be removed. If an upgrade for a package requires the remove\n    of an installed package the upgrade for this package isn't performed.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nupgrade - upgrade the system by installing/upgrading packages\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt upgrade",
+            "title": "apt upgrade"
+        },
+        {
+            "location": "/content/command/apt/apt-upgrade/#apt-upgrade",
+            "text": "",
+            "title": "apt upgrade"
+        },
+        {
+            "location": "/content/command/apt/apt-upgrade/#manpage",
+            "text": "\u57f7\u884c  $ man apt  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5 \u8aaa\u660e  upgrade (apt-get(8))\n    upgrade is used to install available upgrades of all packages currently installed on the system from the\n    sources configured via sources.list(5). New packages will be installed if required to statisfy\n    dependencies, but existing packages will never be removed. If an upgrade for a package requires the remove\n    of an installed package the upgrade for this package isn't performed.",
+            "title": "manpage"
+        },
+        {
+            "location": "/content/command/apt/apt-upgrade/#help",
+            "text": "\u57f7\u884c  $ apt -h  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e  upgrade - upgrade the system by installing/upgrading packages",
+            "title": "help"
+        },
+        {
+            "location": "/content/command/apt/apt-upgrade/#_1",
+            "text": "\u57f7\u884c  $ sudo apt upgrade",
+            "title": "\u6307\u4ee4\u7bc4\u4f8b"
         }
     ]
 }
