@@ -252,7 +252,7 @@
         },
         {
             "location": "/content/command/apt/apt-upgrade/",
-            "text": "apt upgrade\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nupgrade (apt-get(8))\n    upgrade is used to install available upgrades of all packages currently installed on the system from the\n    sources configured via sources.list(5). New packages will be installed if required to statisfy\n    dependencies, but existing packages will never be removed. If an upgrade for a package requires the remove\n    of an installed package the upgrade for this package isn't performed.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nupgrade - upgrade the system by installing/upgrading packages\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt upgrade",
+            "text": "apt upgrade\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nupgrade (apt-get(8))\n    upgrade is used to install available upgrades of all packages currently installed on the system from the\n    sources configured via sources.list(5). New packages will be installed if required to statisfy\n    dependencies, but existing packages will never be removed. If an upgrade for a package requires the remove\n    of an installed package the upgrade for this package isn't performed.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nupgrade - upgrade the system by installing/upgrading packages\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt upgrade\n\n\n\n\n\u57f7\u884c\n\n\n$ sudo apt upgrade -y",
             "title": "apt upgrade"
         },
         {
@@ -272,7 +272,32 @@
         },
         {
             "location": "/content/command/apt/apt-upgrade/#_1",
-            "text": "\u57f7\u884c  $ sudo apt upgrade",
+            "text": "\u57f7\u884c  $ sudo apt upgrade  \u57f7\u884c  $ sudo apt upgrade -y",
+            "title": "\u6307\u4ee4\u7bc4\u4f8b"
+        },
+        {
+            "location": "/content/command/apt/apt-full-upgrade/",
+            "text": "apt full-upgrade\n\n\nmanpage\n\n\n\u57f7\u884c\n\n\n$ man apt\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\n\u8aaa\u660e\n\n\nfull-upgrade (apt-get(8))\n    full-upgrade performs the function of upgrade but will remove currently installed packages if this is\n    needed to upgrade the system as a whole.\n\n\n\n\nhelp\n\n\n\u57f7\u884c\n\n\n$ apt -h\n\n\n\n\n\u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e\n\n\nfull-upgrade - upgrade the system by removing/installing/upgrading packages\n\n\n\n\n\u6307\u4ee4\u7bc4\u4f8b\n\n\n\u57f7\u884c\n\n\n$ sudo apt full-upgrade\n\n\n\n\n\u57f7\u884c\n\n\n$ sudo apt full-upgrade -y",
+            "title": "apt full-upgrade"
+        },
+        {
+            "location": "/content/command/apt/apt-full-upgrade/#apt-full-upgrade",
+            "text": "",
+            "title": "apt full-upgrade"
+        },
+        {
+            "location": "/content/command/apt/apt-full-upgrade/#manpage",
+            "text": "\u57f7\u884c  $ man apt  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5 \u8aaa\u660e  full-upgrade (apt-get(8))\n    full-upgrade performs the function of upgrade but will remove currently installed packages if this is\n    needed to upgrade the system as a whole.",
+            "title": "manpage"
+        },
+        {
+            "location": "/content/command/apt/apt-full-upgrade/#help",
+            "text": "\u57f7\u884c  $ apt -h  \u53ef\u4ee5\u627e\u5230\u4e00\u6bb5\u8aaa\u660e  full-upgrade - upgrade the system by removing/installing/upgrading packages",
+            "title": "help"
+        },
+        {
+            "location": "/content/command/apt/apt-full-upgrade/#_1",
+            "text": "\u57f7\u884c  $ sudo apt full-upgrade  \u57f7\u884c  $ sudo apt full-upgrade -y",
             "title": "\u6307\u4ee4\u7bc4\u4f8b"
         }
     ]

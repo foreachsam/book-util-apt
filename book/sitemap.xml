@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,7 +13,7 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/referance/manual/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -23,13 +23,13 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/deb-package/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/deb-package/apt/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -39,43 +39,49 @@
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-update/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-list/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-show/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-install/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-remove/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-upgrade/</loc>
-     <lastmod>2016-05-22</lastmod>
+     <lastmod>2016-05-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://foreachsam.github.io/book-util-apt/book/content/command/apt/apt-full-upgrade/</loc>
+     <lastmod>2016-05-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
