@@ -16,37 +16,37 @@
             "title": "\u74b0\u5883"
         },
         {
-            "location": "/content/referance/manual/",
+            "location": "/content/reference/manual/",
             "text": "manual\n\n\nmanpage\n\n\n\n\n$ man 8 \napt-key\n\n\n$ man 8 \napt-secure\n\n\n$ man 8 \napt\n\n\n$ man 8 \napt-cache\n\n\n$ man 8 \napt-cofig\n\n\n$ man 8 \napt-mark\n\n\n$ man 8 \napt-get\n\n\n$ man 8 \napt-cdrom\n\n\n$ man 5 \nsources-list\n\n\n$ man 5 \napt_preferences\n\n\n$ man 5 \napt.conf\n\n\n\n\nUbuntu Official Documentation\n\n\n\n\nUbuntu Server Guide / \nPackage Management\n\n\nUbuntu Server Guide / Package Management / \nApt\n\n\n\n\nUbuntu Community Help Wiki\n\n\n\n\nSoftwareManagement\n\n\nAptGet Howto\n\n\nRepositories / CommandLine\n\n\nRepositories / Ubuntu\n\n\nSecureApt\n\n\n\n\nDebian Wiki\n\n\n\n\nPackageManagement\n\n\nDebianPackageManagement\n\n\nDebianPackage\n\n\nPackage\n\n\nSourcePackage\n\n\nListInstalledPackages\n\n\nSecureApt\n\n\nSourcesList\n\n\nMaintainerScripts\n\n\n\n\nDebian\n\n\n\n\nAPT HOWTO\n - (\n\u4e2d\u6587\n)\n\n\nDebian Reference / \nChapter 2. Debian package management",
             "title": "manual"
         },
         {
-            "location": "/content/referance/manual/#manual",
+            "location": "/content/reference/manual/#manual",
             "text": "",
             "title": "manual"
         },
         {
-            "location": "/content/referance/manual/#manpage",
+            "location": "/content/reference/manual/#manpage",
             "text": "$ man 8  apt-key  $ man 8  apt-secure  $ man 8  apt  $ man 8  apt-cache  $ man 8  apt-cofig  $ man 8  apt-mark  $ man 8  apt-get  $ man 8  apt-cdrom  $ man 5  sources-list  $ man 5  apt_preferences  $ man 5  apt.conf",
             "title": "manpage"
         },
         {
-            "location": "/content/referance/manual/#ubuntu-official-documentation",
+            "location": "/content/reference/manual/#ubuntu-official-documentation",
             "text": "Ubuntu Server Guide /  Package Management  Ubuntu Server Guide / Package Management /  Apt",
             "title": "Ubuntu Official Documentation"
         },
         {
-            "location": "/content/referance/manual/#ubuntu-community-help-wiki",
+            "location": "/content/reference/manual/#ubuntu-community-help-wiki",
             "text": "SoftwareManagement  AptGet Howto  Repositories / CommandLine  Repositories / Ubuntu  SecureApt",
             "title": "Ubuntu Community Help Wiki"
         },
         {
-            "location": "/content/referance/manual/#debian-wiki",
+            "location": "/content/reference/manual/#debian-wiki",
             "text": "PackageManagement  DebianPackageManagement  DebianPackage  Package  SourcePackage  ListInstalledPackages  SecureApt  SourcesList  MaintainerScripts",
             "title": "Debian Wiki"
         },
         {
-            "location": "/content/referance/manual/#debian",
+            "location": "/content/reference/manual/#debian",
             "text": "APT HOWTO  - ( \u4e2d\u6587 )  Debian Reference /  Chapter 2. Debian package management",
             "title": "Debian"
         },
